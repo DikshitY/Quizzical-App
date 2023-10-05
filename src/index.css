@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Karla:wght@700&display=swap');
+
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  font-family: 'karla', sans-serif;
+}
+
+main{
+  background-image: url("./assets/bgg.avif");
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Start-Page */
+
+.landing-page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 1.25rem;
+}
+
+.landing-page-title, .landing-page-description{
+  color: #293264;
+  margin: 0;
+}
+
+.landing-page-btn{
+  background-color: #4D5B9E;
+  color: white;
+  border: none;
+  padding: 1rem 2.5rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.landing-page-btn:active{
+  box-shadow: inset 5px 5px 10px -3px rgba(5, 38, 80, 0.7);
+}
+
+.check-btn{
+  color: white;
+  background: #4D5B9E;
+  border-radius: 10px;
+  border: none;
+  padding: 14px 24px;
+  justify-self: center;
+}
+.ssecond-page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.end-div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: .2rem;
+}
+.score{
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+/* Quiz-Page */
+
+.second-page{
+  padding: 0 2rem;
+}
+
+.quiz-page{
+  margin-bottom: .65rem;
+  width: 100%;
+  text-align: left;
+  color: #293264;
+}
+
+.question-title{
+  color: rgba(41, 50, 100, 1);
+  margin-bottom: 1rem;
+}
+.answer{
+  color: rgba(41, 50, 100, 1);
+  background-color: transparent;
+  border: 1px solid #4D5B9E;
+  border-radius: .3rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  padding: 2px 8px;
+}
+.line{
+  margin-top: .5rem;
+  width: 100%;
+  border-top: 0.794239px solid #c4c8e0;
+}
+
+.selected{
+  background-color: #D6DBF5;
+}
+
+#correct.answer{
+  background-color: #94D7A2;
+  border: 1px solid #94D7A2;
+}
+#incorrect.answer.selected{
+  background-color: #F8BCBC;
+  border: 1px solid #F8BCBC;
+}
+#not-selected.answer{
+  color: rgba(41, 50, 100, .4);
+  border: 1px solid rgba(41, 50, 100, .4);
+}
+
+/* Responsiveness */
+
+/* @media (max-width: 420px) {
+  
+} */
