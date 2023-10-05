@@ -1,5 +1,6 @@
 import React from 'react'
 import { nanoid } from 'nanoid'
+import { decode } from 'html-entities'
 
 export default function Quiz(props){
 
@@ -25,13 +26,13 @@ export default function Quiz(props){
             }
         }
         return (
-            <button key={nanoid()} id = {id} className={answer === props.ques.selected ? 'answer selected' : 'answer'} onClick = {() => handleClick(answer)}>{answer}</button>
+            <button key={nanoid()} id = {id} className={answer === props.ques.selected ? 'answer selected' : 'answer'} onClick = {() => handleClick(answer)}>{decode(answer)}</button>
         )
     })
 
     return (
             <div className="quiz-page">
-                <h3 className='question-title'>{props.ques.question}</h3>
+                <h3 className='question-title'>{decode(props.ques.question)}</h3>
                 {answerElement}
                 <div className="line"></div>
             </div>

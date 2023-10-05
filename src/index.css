@@ -8,17 +8,19 @@
 body{
   margin: 0;
   font-family: 'karla', sans-serif;
+  background-image: url("./assets/bgg.avif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
 }
 
 main{
-  background-image: url("./assets/bgg.avif");
-  height: 100vh;
+  /* height: 100vh; */
   width: 100vw;
   display: flex;
-  background-size: cover;
-  background-repeat: no-repeat;
   justify-content: center;
   align-items: center;
+  margin: 1rem 0;
 }
 
 /* Start-Page */
@@ -30,6 +32,7 @@ main{
   justify-content: center;
   height: 100vh;
   gap: 1.25rem;
+  margin: 0 1rem;
 }
 
 .landing-page-title, .landing-page-description{
@@ -126,9 +129,3 @@ main{
   color: rgba(41, 50, 100, .4);
   border: 1px solid rgba(41, 50, 100, .4);
 }
-
-/* Responsiveness */
-
-/* @media (max-width: 420px) {
-  
-} */
